@@ -72,6 +72,29 @@ Generated ~1,600 molecular descriptors using the Mordred library for use as ML f
 | MAE | 0.114 |
 | RMSE | 0.172 |
 
+**Dataset:** 240 compounds, EGFR target, BindingDB  
+**Model:** Random Forest Regressor (200 trees, max_depth=8)  
+**Features:** 1,189 Mordred descriptors (variance filtered)  
+**Split:** 80% train / 20% test  
+
+The cross-validated R² of 0.567 indicates the model explains approximately 
+57% of variance in pIC50 values — a reasonable baseline given the dataset 
+size constraints outlined below.
+
+---
+
+## Limitations & Future Work
+The dataset contains 240 compounds after preprocessing, which is relatively 
+small for the number of Mordred descriptors generated (1,189). This high 
+feature-to-sample ratio limits model performance.
+
+Future improvements:
+- Expand dataset by including IC50 data from ChEMBL once API is restored 
+  (target: 1,000+ compounds)
+- Incorporate 3D conformer-based descriptors for richer molecular representation
+- Test gradient boosting models (XGBoost, LightGBM)
+- Apply cross-validated hyperparameter tuning (GridSearchCV)
+
 ---
 
 ## EDA Highlights
