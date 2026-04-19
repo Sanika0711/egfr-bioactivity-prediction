@@ -129,7 +129,7 @@ scipy
 MSc Drug Discovery & Pharma Management — University College London  
 B.Pharmacy — University of Mumbai  
 
-[LinkedIn](www.linkedin.com/in/sanika-medhekar) | [GitHub](https://github.com/Sanika0711)
+[LinkedIn](https://www.linkedin.com/in/sanika-medhekar) | [GitHub](https://github.com/Sanika0711)
 
 ---
 
